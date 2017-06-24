@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["vickodin"]
   spec.email         = ["vick.orel@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = "Remote html fragment catcher"
+  spec.description   = "Remote html fragment catcher"
   spec.homepage      = "https://github.com/webwarehouse/fragment_catcher"
   spec.license       = "MIT"
 
