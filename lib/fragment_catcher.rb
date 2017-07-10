@@ -1,8 +1,9 @@
-require "fragment_catcher/version"
+# require "fragment_catcher/version"
 require 'nokogiri'
 require 'open-uri'
 
 class FragmentCatcher
+
   attr_accessor :url, :css
 
   def initialize(url: nil, css: nil)
@@ -44,3 +45,4 @@ class FragmentCatcher
       @file ||= URI.parse(url).read
     end
 end
+
