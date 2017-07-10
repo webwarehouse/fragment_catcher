@@ -8,14 +8,12 @@ RSpec.describe FragmentCatcher do
   it "does something useful" do
     expect(false).to eq(true)
   end
-end
 
-RSpec.describe Client do
-  let(:client) { Client.new(url: 'http://example.com/', css: 'div') }
+  let(:client) { Client.new(url: 'http://example.com/', css: 'h1') }
 
-  it "get http code" do
+  it "get fragments method" do
     VCR.use_cassette('get_http_code') do
-      expect(client.code).to eq("200")
+      expect(client.fragments.first).to eq("Example Domain")
     end
   end
 end
