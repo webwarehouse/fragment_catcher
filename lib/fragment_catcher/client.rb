@@ -34,7 +34,7 @@ class Client
   end
 
   def body
-    page.at('body').inner_html
+    file
   end
 
   def code
@@ -48,6 +48,6 @@ class Client
     end
 
     def file
-      @file ||= open(url)
+      @file ||= URI.parse(url).read
     end
 end
