@@ -11,7 +11,7 @@ module FragmentCatcher
     end
 
     def get
-      if page
+      if success?
         true
       else
         false
@@ -39,13 +39,17 @@ module FragmentCatcher
     end
 
     def code
-      open(url).status.first
+      file.status.first
     end
 
     private
 
       def page
-        @page ||= Nokogiri::HTML(open(url))
+        @page ||= Nokogiri::HTML(file)
+      end
+
+      def file
+        @file ||= open(url)
       end
   end
 end
