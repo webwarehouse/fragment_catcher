@@ -10,11 +10,7 @@ class Client
   end
 
   def get
-    if success?
-      true
-    else
-      false
-    end
+    success?
   end
 
   def fragments
