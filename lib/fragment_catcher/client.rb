@@ -26,11 +26,7 @@ class Client
   end
 
   def success?
-    unless fragments.empty?
-      true
-    else
-      false
-    end
+    fragments.any?
   end
 
   def body
