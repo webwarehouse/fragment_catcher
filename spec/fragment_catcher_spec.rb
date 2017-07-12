@@ -2,10 +2,6 @@ require "spec_helper"
 
 RSpec.describe FragmentCatcher do
 
-  it "does something useful" do
-    expect(false).to eq(true)
-  end
-
   let(:fragment_catcher) { FragmentCatcher.new(url: 'http://example.com/', css: 'h1') }
 
   it "get fragments method" do
