@@ -1,13 +1,12 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "fragment_catcher/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "fragment_catcher"
-  spec.version       = FragmentCatcher::VERSION
-  spec.authors       = ["vickodin"]
-  spec.email         = ["vick.orel@gmail.com"]
+  spec.version       = "0.2.0"
+  spec.authors       = ["gambro"]
+  spec.email         = ["gambro87@gmail.com"]
 
   spec.summary       = "Remote html fragment catcher"
   spec.description   = "Remote html fragment catcher"
